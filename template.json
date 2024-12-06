@@ -2,6 +2,6 @@
   "task" : {
     "program": ["main.cpp", "main.cpp"],
     "submit": "main.cpp",
-    "static": ["do", "precision"]
+    "static": ["do", "precision", "makefile", "compile_flags"]
   }
 }
