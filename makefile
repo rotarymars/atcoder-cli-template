@@ -6,7 +6,8 @@ all: $(BIN)
 	./do
 
 $(BIN): $(SRC)
-	$(CC) -std=c++2b -Wall -Wextra $(SRC) -o $(BIN)
+	python $(CPLUS_INCLUDE_PATH) --origname $(SRC) $(SRC)
+	combined.cpp -std=c++2b -Wall -Wextra $(SRC) -o $(BIN)
 
 precision: $(BIN)
 	./precision

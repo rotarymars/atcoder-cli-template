@@ -1,7 +1,7 @@
 {
   "task" : {
     "program": ["main.cpp", "main.cpp"],
-    "submit": "main.cpp",
+    "submit": "combined.cpp",
     "static": ["do", "precision", "makefile", "compile_flags.txt", ".clangd"]
   }
 }
