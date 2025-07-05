@@ -6,7 +6,7 @@ all: $(BIN)
 	./do
 
 $(BIN): $(SRC)
-	python $(CPLUS_INCLUDE_PATH)/expander.py --origname $(SRC) $(SRC)
+	python $(ROOT_PATH)/expander.py --origname $(SRC) $(SRC)
 	$(CC) -std=c++2b -Wall -Wextra combined.cpp -o $(BIN)
 
 precision: $(BIN)
