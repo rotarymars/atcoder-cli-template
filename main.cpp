@@ -1,6 +1,5 @@
-#include <template/fastio.hpp>
+#include <iostream>
 using namespace std;
 signed main() {
-  FastIO io;
   return 0;
 }
