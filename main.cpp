@@ -1,4 +1,3 @@
-#include <iostream>
 #include <template/fastio.hpp>
 using namespace std;
 signed main() {
