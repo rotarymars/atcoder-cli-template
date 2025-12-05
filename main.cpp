@@ -1,6 +1,7 @@
 #include <iostream>
+#include <template/fastio.hpp>
 using namespace std;
 signed main() {
-  cin.tie(0)->sync_with_stdio(0);
+  FastIO io;
   return 0;
 }
