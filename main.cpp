@@ -1,4 +1,4 @@
-#include <template/fastio.hpp>
+#include <fastio.hpp>
 using namespace std;
 signed main() {
   FastIO io;
