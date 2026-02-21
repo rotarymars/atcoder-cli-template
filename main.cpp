@@ -509,7 +509,27 @@ T LCM(T a, T b) {
 #ifndef __ROTARYMARS__INVERSE_ELEMENT__
 #define __ROTARYMARS__INVERSE_ELEMENT__ 1
 #include <cstdlib>
-#include <template/powmod.hpp>
+#ifndef __ROTARYMARS__POWMOD__
+#define __ROTARYMARS__POWMOD__
+template <class T>
+T POWMOD(T a, T b, T c) {
+  T ans = 1;
+  a %= c;
+  while (b != 0)
+  {
+    if (b & 1)
+    {
+      ans *= a;
+    }
+    a *= a;
+    b >>= 1;
+    a %= c;
+    ans %= c;
+  }
+  return ans;
+}
+#else
+#endif
 template <class T> T inverse_element(T x, T mod) {
   return POWMOD(x, mod - 2, mod);
 }
